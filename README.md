@@ -14,4 +14,4 @@ Postal codes from [Posten](https://www.bring.no/postnummerregister-ansi.txt) and
 - category description
 - county (fylke)
 - county number (fylkesnummer)
-- geojson (might be `null` for some postal codes)
+- geojson (is `null` for postal codes of categories `P` and `S`, and postal codes `0018` and `0045`)
