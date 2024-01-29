@@ -1,5 +1,17 @@
 # Norwegian Geodata
 
-JSON file(s) with Norwegian geodata applied and/or merged from different sources (Kartverket, Geonorge, etc.).
+## Files
 
-For now just a JSON file with postal codes that also includes GeoJSON for some of them.
+### [`postal-codes.json`](postal-codes.json)
+
+Postal codes from [Posten](https://www.bring.no/postnummerregister-ansi.txt) and geodata from [Kartverket](https://ws.geonorge.no/kommuneinfo/v1/). Merged into a single JSON file, keyed by postal codes, containing the following data:
+
+- postal code
+- city/place (poststed)
+- municipality number
+- municipality
+- cateogory
+- category description
+- county (fylke)
+- county number (fylkesnummer)
+- geojson (might be `null` for some postal codes)
